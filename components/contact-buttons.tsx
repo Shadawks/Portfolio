@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Check, FileDown, Mail } from 'lucide-react'
+import { Check, FileUser, Mail } from 'lucide-react'
 import { useState } from "react"
 
 
@@ -19,31 +19,31 @@ export function ContactButtons() {
   }
 
   return (
-    <div className="flex gap-2 flex-col md:flex-row">
-      <Button onClick={downloadResume}>
-        {downloaded ? (
-          <>
-            <Check className="w-4 h-4" />
-          </>
-        ) : (
-          <>
-            <FileDown className="w-4 h-4" />
-            Resume
-          </>
-        )}
-      </Button>
-      <Button onClick={copyEmail}>
-        {copied ? (
-          <>
-            <Check className="w-4 h-4" />
-          </>
-        ) : (
-          <>
-            <Mail className="w-4 h-4" />
-            Email
-          </>
-        )}
-      </Button>
-    </div>
+        <div className="flex gap-2 flex-col md:flex-row">
+          <Button onClick={downloadResume}>
+            {downloaded ? (
+              <>
+                <Check className="w-4 h-4" />
+              </>
+            ) : (
+              <>
+                <FileUser className="w-4 h-4" />
+                <span className="hidden sm:inline">Resume</span>
+              </>
+            )}
+          </Button>
+          <Button onClick={copyEmail}>
+            {copied ? (
+              <>
+                <Check className="w-4 h-4" />
+              </>
+            ) : (
+              <>
+                <Mail className="w-4 h-4" />
+                <span className="hidden sm:inline">Email</span>
+              </>
+            )}
+          </Button>
+        </div>
   )
 }

@@ -27,9 +27,9 @@ export function Contact() {
 							</div>
 						</CarouselItem>
 					))}
-				</CarouselContent>
-				<CarouselPrevious />
-				<CarouselNext />
+				</ CarouselContent>
+				<CarouselPrevious className="hidden sm:flex" />
+				<CarouselNext className="hidden sm:flex" />
 			</Carousel>
 			<div className="w-full max-w-2xl">
 				<Card className="border-none">
