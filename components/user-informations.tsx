@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { ContactButtons } from "./contact-buttons";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
@@ -16,7 +15,7 @@ export function UserInformations() {
           <div>
             <h1 className="text-2xl font-semibold flex items-center gap-2">
               Nathan Leibel
-              <span className="text-blue-500">
+              <span className="text-blue-500 hidden md:flex">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.3334 4L6.00008 11.3333L2.66675 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
