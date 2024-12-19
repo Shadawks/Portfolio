@@ -32,7 +32,7 @@ export function Contact() {
 				<CarouselNext />
 			</Carousel>
 			<div className="w-full max-w-2xl">
-				<Card className="sm:border-none">
+				<Card className="border-none">
 					<CardTitle className="font-medium text-lg text-center">Keep in touch 👇</CardTitle>
 					<CardContent className="p-6">
 						<div className="grid grid-cols-2 gap-4 place-items-center">

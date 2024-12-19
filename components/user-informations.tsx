@@ -7,7 +7,7 @@ export function UserInformations() {
     <div className="flex items-start gap-4 px-10">
 
       <Avatar className="rounded-full border-4 border-[#09090b] -mt-10 w-32 h-32">
-        <AvatarImage src="/pfp.jpg" />
+        <AvatarImage src="/pdp.jpg" alt='Me at European Cybercup' />
         <AvatarFallback>NL</AvatarFallback>
       </Avatar>
 

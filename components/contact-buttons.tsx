@@ -19,7 +19,7 @@ export function ContactButtons() {
   }
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 flex-col md:flex-row">
       <Button onClick={downloadResume}>
         {downloaded ? (
           <>
