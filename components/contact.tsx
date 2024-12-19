@@ -26,8 +26,8 @@ export function Contact() {
 			title: "Soon™",
 			description: "I'm working on something cool, stay tuned!",
 			link: "/",
-		}
-	]
+		},
+	];
 
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 place-items-center">
@@ -69,32 +69,40 @@ export function Contact() {
 								className="w-full flex items-center justify-center gap-2"
 								asChild
 							>
-								
-								<Link href={"https://www.linkedin.com/in/nathanlbl/"}><Linkedin />LinkedIn</Link>
+								<Link href={"https://www.linkedin.com/in/nathanlbl/"}>
+									<Linkedin />
+									LinkedIn
+								</Link>
 							</Button>
 							<Button
 								variant="outline"
 								className="w-full flex items-center justify-center gap-2"
 								asChild
 							>
-								
-								<Link href={"https://github.com/Shadawks"}><Github />GitHub</Link>
+								<Link href={"https://github.com/Shadawks"}>
+									<Github />
+									GitHub
+								</Link>
 							</Button>
 							<Button
 								variant="outline"
 								className="w-full flex items-center justify-center gap-2"
 								asChild
 							>
-								
-								<Link href={"https://x.com/kyndaxv"}><Twitter />Twitter</Link>
+								<Link href={"https://x.com/kyndaxv"}>
+									<Twitter />
+									Twitter
+								</Link>
 							</Button>
 							<Button
 								variant="outline"
 								className="w-full flex items-center justify-center gap-2"
 								asChild
 							>
-								
-								<Link href={"mailto:nathan@leibel.dev"}><Mail />eMail</Link>
+								<Link href={"mailto:nathan@leibel.dev"}>
+									<Mail />
+									eMail
+								</Link>
 							</Button>
 						</div>
 					</CardContent>
