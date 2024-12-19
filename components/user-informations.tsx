@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export function UserInformations() {
   return (
-    <div className="flex items-start gap-4 px-10">
+    <div className="flex items-start gap-4 px-2 md:px-10">
 
       <Avatar className="rounded-full border-4 border-[#09090b] -mt-10 w-32 h-32">
         <AvatarImage src="/pdp.jpg" alt='Me at European Cybercup' />
