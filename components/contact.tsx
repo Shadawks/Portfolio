@@ -7,21 +7,47 @@ import {
 	CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter, X } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter, Navigation } from "lucide-react";
 import Link from "next/link";
 
 export function Contact() {
+	const recentWork = [
+		{
+			title: "Portfolio",
+			description: "My personal website, built with Next.js and TailwindCSS.",
+			link: "/",
+		},
+		{
+			title: "Strapwn",
+			description: "The first all in one Strapi Exploitation Tool",
+			link: "https://github.com/Shadawks/Strapwn/",
+		},
+		{
+			title: "Soon™",
+			description: "I'm working on something cool, stay tuned!",
+			link: "/",
+		}
+	]
+
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 place-items-center">
 			<Carousel className="w-full max-w-lg">
 				<p className="font-medium text-lg text-center my-2">Recent work 🎨</p>
 				<CarouselContent>
-					{Array.from({ length: 5 }).map((_, index) => (
+					{recentWork.map((work, index) => (
 						<CarouselItem key={index}>
 							<div className="p-1">
 								<Card>
 									<CardContent className="flex aspect-video items-center justify-center">
-										<span className="text-4xl font-semibold">Soon™</span>
+										<div className="flex flex-col items-center justify-center gap-2">
+											<h2 className="text-lg font-semibold">{work.title}</h2>
+											<p className="text-gray-400">{work.description}</p>
+											<Button variant="outline" asChild>
+												<Link href={work.link}>
+													<Navigation />
+												</Link>
+											</Button>
+										</div>
 									</CardContent>
 								</Card>
 							</div>
